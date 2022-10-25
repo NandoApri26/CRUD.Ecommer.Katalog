@@ -1,0 +1,14 @@
+@model Floram.Models.LoginRequest;
+<form action="Login" method="POST" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="Username" class="form-label">Username</label>
+    <input type="text" class="form-control" id="Username"  name="Username" placeholder="Insert your username">
+  </div>
+  <div class="mb-3">
+    <label for="Password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="Password" name="Password" placeholder="Please insert your password">
+  </div>
+  <a asp-controller="User" asp-action="Register">Belum punya akun? Daftar Sekarang</a>
+  <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

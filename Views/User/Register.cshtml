@@ -1,0 +1,32 @@
+@model Floram.Models.RegisterRequest;
+<form action="Register" method="POST" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="Username" class="form-label">Username</label>
+    <input type="text" class="form-control" id="Username"  name="Username" placeholder="Insert your username">
+  </div>
+  <div class="mb-3">
+    <label for="Password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="Password" name="Password" placeholder="Please insert your password">
+  </div>
+  <div class="mb-3">
+    <label for="Nama" class="form-label">Nama</label>
+    <input type="text" class="form-control" id="Nama" name="Nama" placeholder="Please insert your name">
+  </div>
+  <div class="mb-3">
+    <label for="Alamat" class="form-label">Alamat</label>
+    <input type="text" class="form-control" id="Alamat" name="Alamat" placeholder="Please insert your addsess">
+  </div>
+  <div class="mb-3">
+    <label for="NoHp" class="form-label">No Handphone</label>
+    <input type="text" class="form-control" id="NoHp" name="NoHp" placeholder="Please insert your phone number">
+  </div>
+  <div class="mb-3">
+    <label for="Tipe" class="form-label">Tipe</label>
+    <select name="Tipe" id="Tipe">
+      <option value="Admin">Admin</option>
+      <option value="Penjual">Penjual</option>
+      <option value="Pembeli">Pembeli</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
